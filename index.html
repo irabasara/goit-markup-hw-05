@@ -56,42 +56,13 @@
       <!-- hero -->
       <section class="hero">
         <div class="container"><h1 class="hero-text">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-btn">Order Service</button></div>
+        <button type="button" class="hero-btn" data-modal-open>Order Service</button></div>
          
       </section>
       <!-- feature  -->
       <section >
         <div class="container"><h2 class="visually-hidden">our feature</h2>
-          <!-- <ul class="feature-list-prymiry list">
-            <li class="feature-list-item">
-              <a href=""class="feature-list-link">
-                <svg class="feature-list-icon" width="64" height="64">
-                  <use href="./images/sprite.svg#icon-antenna"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href=""class="feature-list-link">
-                <svg class="feature-list-icon" width="64" height="64">
-                  <use href="./images/sprite.svg#icon-clock"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href=""class="feature-list-link">
-                <svg class="feature-list-icon" width="64" height="64">
-                  <use href="./images/sprite.svg#icon-diagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href=""class="feature-list-link">
-                <svg class="feature-list-icon" width="64" height="64">
-                  <use href="./images/sprite.svg#icon-astronaut"></use>
-                </svg>
-              </a>
-            </li>
-          </ul> -->
+
         <ul class="list feature-container">
           <li class="feature-list">
             <div class="feature-list-link">
@@ -359,11 +330,17 @@
       </div>
      </div >
     </footer>
-    <div class="backdrop">
+    <!-- modal-windows -->
+    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="clouse-modal-btn"></button>
+      <button type="button" class="clouse-modal-btn" data-modal-close>
+        <svg class="icon-close" width="8" height="8">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
     </div>
+    <script src="./js/modal.js"></script>
 
   </body>
 </html>
